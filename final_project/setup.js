@@ -23,22 +23,22 @@ function setup() {
   print(table.getColumnCount() + ' total columns in table');
 
   //cycle through the table
-  for (let r = 0; r < table.getRowCount(); r++)
-    for (let c = 0; c < table.getColumnCount(); c++) {
-      print(table.getString(r, c));
-    }
+  // for (let r = 0; r < table.getRowCount(); r++)
+  //   for (let c = 0; c < table.getColumnCount(); c++) {
+  //     print(table.getString(r, c));
+  //   }
 
-  let keywords = ["lol", "cray", "swag", "yolo", "noob", "pwned", "epic fail"]
-  var count;
+  // let keywords = ["lol", "cray", "swag", "yolo", "noob", "pwned", "epic fail"]
+  // var count;
 
-  tweets = table.getColumn('tweet_text')
-  for(let i=0; i<len(tweets); i++){
-    for(let i=0; i < len(keywords); i++) {
-      if(keywords[i] in tweets[i]) {
-        slang_words[i] = tweets[i]
-      }
-    }
-  }
+  // tweets = table.getColumn('tweet_text')
+  // for(let i=0; i<len(tweets); i++){
+  //   for(let i=0; i < len(keywords); i++) {
+  //     if(keywords[i] in tweets[i]) {
+  //       slang_words[i] = tweets[i]
+  //     }
+  //   }
+  // }
 
 
 }
