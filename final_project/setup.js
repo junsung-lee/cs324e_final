@@ -42,3 +42,13 @@ function setup() {
 
 
 }
+function toggleImage(){
+  var sourceOfPicture = "https://cdn-images-1.medium.com/max/1600/0*UabFjZCc8yJ0JK3x.jpg";
+  var img = document.getElementById('elon')
+  if (img.style.visibility == "visible"){
+    img.style.visibility = "hidden";
+  }
+  else{
+    img.style.visibility = "visible";
+  }
+}
