@@ -6,31 +6,86 @@
   </head>
 
   <style>
+    /* #viz1557169608779{
+      position: absolute;
+      top: 300px;
+    } */
+    #startBtn {
+      position: absolute;
+      top: 100px;
+      left: 250px;
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+    }
+    #startBtn2 {
+      position: absolute;
+      top: 200px;
+      left: 250px;
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+    }
+    #startBtn3 {
+      position: absolute;
+      top: 300px;
+      left: 250px; 
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+    }
     body {
-      background-color: #595959
+      background-color: #ffffff
     }
   </style>
 
   <body>
+    <font face="verdana"><h1> Twitter Visualization </h1></font>
+    <!-- <button type = "button" id = "startBtn" onclick = "initialize()"> START </button>
+    <button type = "button" id = "startBtn2" onclick = "function2()"> VISUALIZE </button>
+    <button type = "button" id = "startBtn3" onclicke = "function3()"> TREND </button> -->
     <script src="libraries/p5.js"></script>
     <script src="libraries/three.js"></script>
     <!-- d3 libraries: -->
     <script src="libraries/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.min.js"></script>
-
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.min.js"></script>
     <script src="setup.js"></script>
-    <font face="Arial"><h1> Twitter Visualization </h1></font>
+
+    <button type = "button" id = "startBtn" onclick = "showDiv()"> POOP</button>
 
 
-    <!-- <button onclick="toggleImage()">Display</button>
-    <div id="elon"> <img src="random.jpg" img style="display:block"> </img> </div> -->
+    <!-- tableau implementation -->
+    <div class='tableauPlaceholder' id='viz1557169608779' style='visibility:hidden;'>
+        <noscript>
+          <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/Sl/SlangChoro/lol/1_rss.png'/>
+          </a>
+        </noscript><object class='tableauViz'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='SlangChoro/lol' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Sl/SlangChoro/lol/1.png' />
+          <param name='animate_transition' value = 'yes'/>
+          <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='filter' value='publish=yes' />
+        </object></div> 
+        <script type='text/javascript'>
+        var divElement = document.getElementById('viz1557169608779'); 
+        var vizElement = divElement.getElementsByTagName('object')[0]; 
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; 
+        var scriptElement = document.createElement('script'); 
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+        vizElement.parentNode.insertBefore(scriptElement, vizElement); 
+        </script>
 
-    <div class='tableauPlaceholder' id='viz1557170265445' style='position:relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;lo&#47;lolVSswag&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='lolVSswag&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;lo&#47;lolVSswag&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
-    <script type='text/javascript'>                    var divElement = document.getElementById('viz1557170265445');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-
-
-  <div class='tableauPlaceholder' id='viz1557171947563' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sl&#47;SlangWordFreq&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SlangWordFreq&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sl&#47;SlangWordFreq&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1557171947563');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
 
 
