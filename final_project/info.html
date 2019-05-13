@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Background </title>
+  <style>
+    div {
+      width: 75%;
+      padding: 5px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2> Main Menu </h2>
+
+    <nav>
+        <ul>
+            <li><a href="final_demo.html">Main Page</a></li>
+            <li><a href="demo2.html">Word Cloud</a></li>
+
+        </ul>
+    </nav>
+  </header>
+
+  <h1> The Data </h1>
+  <div id="collection">This data was collected as part of a research project on slang words by Lars Hinrichs, English Professor at the University of Texas at Austin. Between 2011-2017, Dr. Hinrichs scraped random samples of English tweets based on a set of keywords (the set of slang words). He was kind enough to allow our team access to the raw data in our visualization project.
+   </div>
+
+  <h2> Data Cleaning </h2>
+  <div id="cleaning">
+  <p>After obtaining the raw tweets, our team filtered them based on our slang words of interest using the Pandas library in Python. We chose these words after observing which popular culture terms appeared in the frequency distribution of all words in the dataset.</p>
+  <p>Our data has three categories: vulgarities, slang words, and hashtags.</p>
+
+  <p><strong>Vulgarities:</strong> This includes tweets that contain <a href=http://www.bannedwordlist.com/lists/swearWords.txt">commonly censored profanities</a>.</p>
+
+  <p><strong>Slang words:</strong> words that are not vulgarities, and which appear to be in trend. We referenced some articles about popular slang words in the given year:<a href="https://www.huffingtonpost.ca/2011/12/02/slang-words-teens_n_1113329.html"> HuffPost: Slang Words in 2011</a>, <a href="https://www.huffingtonpost.ca/2012/12/19/slang-words-2012_n_2322664.html"> HuffPost: Slang Words in 2012</a>. We found many of these words to be acronyms.</p>
+
+  <p><strong>Hashtags:</strong> we attempted to find the most common hashtags referenced within the dataset. The hashtags we found in the random sample did not align with many reported "Top Hashtag" lists for the given year, or even the <a href=https://yearinreview.twitter.com/en/hottopics.html">list<a> Twitter itself published at the end of 2011. Thus, these findings should be used with caution.</p>
+  </div>
