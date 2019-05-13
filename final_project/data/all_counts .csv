@@ -9,10 +9,9 @@ ugh,411,3489,Slang,3900
 wat,441,3714,Slang,4155
 wtf,516,4417,Slang,4933
 xd,170,1641,Slang,1811
-HASHgetalljobs,204,980,HashTag,1184
-HASHjobs,1855,6883,HashTag,8738
-HASHsorrynotsorry,9,510,HashTag,519
-HASHwinning,180,763,HashTag,943
+#getalljobs,204,980,HashTag,1184
+#jobs,1855,6883,HashTag,8738
+#winning,180,763,HashTag,943
 ass,1959,19042,Vulgarity,21001
 bitch,1256,13515,Vulgarity,14771
 bullshit,166,1406,Vulgarity,1572
